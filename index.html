@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <! This style sheet is taken from https://www.w3schools.com/howto/howto_js_tabs.asp>
+  <link href="styles/style.css"rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico">
+    <title>Trader Shaq's</title>
+</head>
+
+<body onload="dietarySelections()">
+
+  <header>
+    Trader Shaq's
+  </header>
+
+  <div class="bigContent">
+
+    <!-- Tab content -->
+    <div id="Client" class="contentarea">
+      <h3>Dietary Preferences</h3>
+      <div class="dietaryOptions" onclick="dietarySelections()">
+        <label><input type="checkbox" name="dietarySelection" value="lactose_intolerant" id="lactose_intolerant">Lactose Intolerant</label>
+        <br>
+        <label><input type="checkbox" name="dietarySelection" value="nut_allergy" id="nut_allergy">Nut Allergy</label>
+        <br>
+        <label><input type="checkbox" name="dietarySelection" value="organic" id="organic">Organic</label>
+      </div>
+    </div>
+
+    <div id="Products" class="contentarea">
+      <h3>Products</h3>
+      <div id="displayProduct"></div>
+    </div>
+
+    <div id="Cart" class="contentarea">
+      <h3>Cart</h3>
+      <p>Your cart contains the following items:</p>
+      <div id="displayCart">
+        <div id="cartItemsDisplay">
+          <ul id="cartItems">
+          </ul>
+        </div>
+        <div id="totalPrice">
+          <span>TOTAL COST:</span>
+          <span id="price"></span>
+        </div>
+      </div>
+
+      <div class="daButtons">
+        <button type="button" class="block pageButton"
+          onclick="window.alert('this button does nothing! why are u clicking it dum dum')">
+          Go to Payment
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/groceries.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
