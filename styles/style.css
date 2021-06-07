@@ -125,6 +125,8 @@ input {
 
 #price {
   font-weight: 800;
+  position: absolute;
+  right: 5%;
 }
 
 /* code from https://codepen.io/andrewsims/pen/mQoYwz */
