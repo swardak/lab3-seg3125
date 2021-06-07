@@ -30,22 +30,25 @@ function dietarySelections() {
 		prodImg.src = ("./assets/").concat(productName, ".jpg");
 		prodCard.appendChild(prodImg);
 
-		var linebr = document.createElement("br");
-		prodCard.appendChild(linebr);
+		var linebr1 = document.createElement("br");
+		prodCard.appendChild(linebr1);
 
 		//create content inside card
-		var nameSpan = document.createElement('p');
+		var nameSpan = document.createElement('span');
 		nameSpan.textContent = productName;
 		nameSpan.className = "nameProd";
 		prodCard.appendChild(nameSpan);
 
+		var linebr2 = document.createElement("br");
+		prodCard.appendChild(linebr2);
 
-		var priceSpan = document.createElement('p');
+		var priceSpan = document.createElement('span');
 		priceSpan.textContent = "$" + productPrice;
 		priceSpan.className = "priceProd";
 		prodCard.appendChild(priceSpan);
 
-		prodCard.appendChild(linebr);
+		var linebr3 = document.createElement("br");
+		prodCard.appendChild(linebr3);
 
 		var addButt = document.createElement('button');
 		addButt.textContent = "Add to Cart";

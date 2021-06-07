@@ -1,13 +1,10 @@
-/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   width: 100%;
   overflow-x: hidden;
   color: #202C39;
+  font-size: larger;
 }
 
 body {
@@ -17,18 +14,16 @@ body {
 }
 
 h3 {
-  margin-top: 0px;
+  margin: 0px;
 }
 
 img {
-  height: 80px;
-  width: 80px;
+  width: 200px;
 }
 
 .bigContent {
   margin: auto;
   display: flex;
-  justify-content: space-around;
 }
 
 p {
@@ -42,18 +37,28 @@ header {
   width: inherit;
   margin-bottom: 20px;
   font-weight: 700;
-  font-size: xx-large;
+  font-size: 250%;
   color: white;
-  text-shadow: 3px 3px #202C39;
 }
 
 button {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   padding: 10px 20px;
-  border-radius: 0px;
+  border-radius: 5%;
   border: none;
   font-size: medium;
+  background-color: #BABD8D;
+  color: white;
+  margin-top: 5%;
+}
+
+.productCard>button {
+  transform: translate(25%, 0%);
+}
+
+#Products {
+  width: 80%;
 }
 
 #displayProduct {
@@ -61,34 +66,55 @@ button {
   flex-wrap: wrap;
 }
 
+#displayProduct::after {
+  content: "";
+  flex: auto;
+}
+
 #Cart {
   display: block;
   width: 30%;
+  padding-left: 20px;
+  border-left: solid 1px #eceacb;
+}
+
+#Cart>span {
+  width: inherit;
 }
 
 #Client {
   display: block;
-  width: 20%;
+  width: 17%;
+  padding-right: 20px;
+  border-right: solid 1px #eceacb;
 }
 
-.contentarea{
+#Client h3 {
+  margin-bottom: 5%;
+}
+
+
+
+input {
+  margin: 5px 10px;
+  filter: grayscale(1);
+  transform: scale(1.3);
+}
+
+.contentarea {
   margin: 0% 1%;
 }
 
-span.priceProd {
+.nameProd {
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 10%;
 
 }
 
-span.nameProd {
-  
-}
-
-.nameCart{
-  color: red;
-}
-
-.priceCart{
-  color: red;
+.priceCart {
+  position: absolute;
+  right: 7%;
 }
 
 #totalPrice {
@@ -106,15 +132,15 @@ span.nameProd {
   top: 0px;
   position: relative;
   max-width: 262px;
-  background-color: #f2f8f9;
   border-radius: 4px;
   padding: 32px 24px;
   margin: 12px;
   text-decoration: none;
   z-index: 0;
   overflow: hidden;
-  border: 1px solid #f2f8f9;
+  border: 1px solid #eceacb;
 }
+
 .productCard:hover {
   transition: all 0.2s ease-out;
   box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);

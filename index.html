@@ -2,15 +2,20 @@
 <html>
 
 <head>
-  <! This style sheet is taken from https://www.w3schools.com/howto/howto_js_tabs.asp>
-  <link href="styles/style.css"rel="stylesheet" type="text/css">
+  <! This style sheet is taken from https://www.w3schools.com/howto/howto_js_tabs.asp> <link href="styles/style.css"
+    rel="stylesheet" type="text/css">
     <link rel="shortcut icon" type="image/jpg" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
     <title>Trader Shaq's</title>
 </head>
 
 <body onload="dietarySelections()">
 
   <header>
+    <span>🌱</span>
     Trader Shaq's
   </header>
 
@@ -20,11 +25,14 @@
     <div id="Client" class="contentarea">
       <h3>Dietary Preferences</h3>
       <div class="dietaryOptions" onclick="dietarySelections()">
-        <label><input type="checkbox" name="dietarySelection" value="lactose_intolerant" id="lactose_intolerant">Lactose Intolerant</label>
+        <input type="checkbox" name="dietarySelection" value="lactose_intolerant">
+        <label for="lactose_intolerant">Lactose Intolerant</label>
         <br>
-        <label><input type="checkbox" name="dietarySelection" value="nut_allergy" id="nut_allergy">Nut Allergy</label>
+        <input type="checkbox" name="dietarySelection" value="nut_allergy">
+        <label for="nut_allergy">Nut Allergy</label>
         <br>
-        <label><input type="checkbox" name="dietarySelection" value="organic" id="organic">Organic</label>
+        <input type="checkbox" name="dietarySelection" value="organic">
+        <label for="organic">Organic</label>
       </div>
     </div>
 
